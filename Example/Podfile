@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'AYSlidingPickerView_Example', :exclusive => true do
+  pod "AYSlidingPickerView", :path => "../"
+end
+
+target 'AYSlidingPickerView_Tests', :exclusive => true do
+  pod "AYSlidingPickerView", :path => "../"
+  
+end

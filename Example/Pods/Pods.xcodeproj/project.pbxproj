@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08CCC67098FD92B323D0384E2B88FE38 /* AYSlidingPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A157E46920C5FA7F4F7BF5BECB9E4511 /* AYSlidingPickerView.m */; };
+		0B9FA4E869A8385B9085EADF7A169A90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		32619DE7A571093E504D9349452E2A9B /* AYSlidingPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27580DCA4B0A97DA273D4CE6FC3045DF /* AYSlidingPickerView-dummy.m */; };
+		5A1DA180370AEAE61CC785BEB9F99FF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		884A0F3B023698298A28ABD8ACC3EB90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		ACA604C82F8AE28121A1FBD06F8E5B88 /* Pods-AYSlidingPickerView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE7CCF8EB157F40E1614C7858C93573 /* Pods-AYSlidingPickerView_Tests-dummy.m */; };
+		C69FE973E35861C893E330D6DA1651AB /* Pods-AYSlidingPickerView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2072386E821A388C6D46D63A779DFC28 /* Pods-AYSlidingPickerView_Example-dummy.m */; };
+		CCAB05258FC79FFCBFA5EFAD695F8112 /* AYSlidingPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F67C0F7D24E6F8012AAF88237FD500 /* AYSlidingPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6537A374D5285A073CFA2223B16EBE28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C0B44D159528C9354B519DE89EADC82;
+			remoteInfo = AYSlidingPickerView;
+		};
+		7554A694C7959513A73663F8DAD76C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB00B4F1BEE304C18F63F8F06ED4005F;
+			remoteInfo = "AYSlidingPickerView-AYSlidingPickerView";
+		};
+		C85DD1E0E0E7E16DE8EF966475D88AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C0B44D159528C9354B519DE89EADC82;
+			remoteInfo = AYSlidingPickerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CE9CD6AD3777E8ABA38850EC9376FCF /* Pods-AYSlidingPickerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AYSlidingPickerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2072386E821A388C6D46D63A779DFC28 /* Pods-AYSlidingPickerView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AYSlidingPickerView_Example-dummy.m"; sourceTree = "<group>"; };
+		27580DCA4B0A97DA273D4CE6FC3045DF /* AYSlidingPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AYSlidingPickerView-dummy.m"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4D7593E1CBD2C733530D64005167592F /* libAYSlidingPickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAYSlidingPickerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54ED1AC15C37F20791EFF00FE015CBB6 /* Pods-AYSlidingPickerView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AYSlidingPickerView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		65F67C0F7D24E6F8012AAF88237FD500 /* AYSlidingPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYSlidingPickerView.h; sourceTree = "<group>"; };
+		68D297ECD019CE803B0359E134550F42 /* AYSlidingPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AYSlidingPickerView.xcconfig; sourceTree = "<group>"; };
+		6CB59D7156029FECB48A9A8E45FD32C0 /* Pods-AYSlidingPickerView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AYSlidingPickerView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		709A109947DEE409B99DD6AF140F5331 /* Pods-AYSlidingPickerView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AYSlidingPickerView_Tests-resources.sh"; sourceTree = "<group>"; };
+		711BB4C7E3AEC9AE56B37064504C975A /* Pods-AYSlidingPickerView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AYSlidingPickerView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		777DEFD509DC409C1C9D874AC2BACB6A /* Pods-AYSlidingPickerView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AYSlidingPickerView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D75944FE669EA54AAFED0EF9D1454F6 /* AYSlidingPickerView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AYSlidingPickerView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE7CCF8EB157F40E1614C7858C93573 /* Pods-AYSlidingPickerView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AYSlidingPickerView_Tests-dummy.m"; sourceTree = "<group>"; };
+		99C7AD268BA7834199893E44DCE41590 /* libPods-AYSlidingPickerView_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AYSlidingPickerView_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC0A7CDE32EE6DB16A561101A6EC818 /* Pods-AYSlidingPickerView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AYSlidingPickerView_Example-resources.sh"; sourceTree = "<group>"; };
+		9FBB8E9A11B94C3294A1BD93B66C78BB /* Pods-AYSlidingPickerView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AYSlidingPickerView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		A157E46920C5FA7F4F7BF5BECB9E4511 /* AYSlidingPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AYSlidingPickerView.m; sourceTree = "<group>"; };
+		AC105E621599056C7669A199E486D16B /* Pods-AYSlidingPickerView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AYSlidingPickerView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF1201C3A43AB05E2032AF26E45BC518 /* AYSlidingPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AYSlidingPickerView-prefix.pch"; sourceTree = "<group>"; };
+		BF8DD9F016E99996E41761C60C6AF9E4 /* Pods-AYSlidingPickerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AYSlidingPickerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C2F1C0AB41FB3E99445D1942BDEA1305 /* Pods-AYSlidingPickerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AYSlidingPickerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB021C6F5E843B48ACED5F370F1FBD0B /* libPods-AYSlidingPickerView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AYSlidingPickerView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA566FDCD958BA6D806B958710C455BC /* Pods-AYSlidingPickerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AYSlidingPickerView_Example.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37FC6AF40EF86B2A63AB1A167764C2A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A6BDF526E03CC1981975AAD47620ADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884A0F3B023698298A28ABD8ACC3EB90 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4E1A2CCE1868A77A8F684FF1E119F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A1DA180370AEAE61CC785BEB9F99FF1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3C064EFEAEBAE168824C86D610D4F7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B9FA4E869A8385B9085EADF7A169A90 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14AF3A1EC08681E3E0B12DBBD39E5EDF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6304A863F934CA04D34A3EB21BD10BB6 /* AYSlidingPickerView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		39BE0FFB5F8ED43EEF3E26B3DA32ED53 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				65F67C0F7D24E6F8012AAF88237FD500 /* AYSlidingPickerView.h */,
+				A157E46920C5FA7F4F7BF5BECB9E4511 /* AYSlidingPickerView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		42FC978174D63C69B8D8E110AEC73185 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3409212C41C5FAFEA3C38506BB7128D /* Pods-AYSlidingPickerView_Example */,
+				B9C6E7A6C8C9F9BE3119B4CF7FFE6753 /* Pods-AYSlidingPickerView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6304A863F934CA04D34A3EB21BD10BB6 /* AYSlidingPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				A8F4ACE5D4224034CD0F3C5E783513AA /* Pod */,
+				ECDC9E8F7CE5A5133334F0EB59D09C0F /* Support Files */,
+			);
+			name = AYSlidingPickerView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				14AF3A1EC08681E3E0B12DBBD39E5EDF /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				EFA2083F884A7D1831124176A1684C52 /* Products */,
+				42FC978174D63C69B8D8E110AEC73185 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A8F4ACE5D4224034CD0F3C5E783513AA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				39BE0FFB5F8ED43EEF3E26B3DA32ED53 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		B9C6E7A6C8C9F9BE3119B4CF7FFE6753 /* Pods-AYSlidingPickerView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				777DEFD509DC409C1C9D874AC2BACB6A /* Pods-AYSlidingPickerView_Tests-acknowledgements.markdown */,
+				AC105E621599056C7669A199E486D16B /* Pods-AYSlidingPickerView_Tests-acknowledgements.plist */,
+				7EE7CCF8EB157F40E1614C7858C93573 /* Pods-AYSlidingPickerView_Tests-dummy.m */,
+				6CB59D7156029FECB48A9A8E45FD32C0 /* Pods-AYSlidingPickerView_Tests-frameworks.sh */,
+				709A109947DEE409B99DD6AF140F5331 /* Pods-AYSlidingPickerView_Tests-resources.sh */,
+				C2F1C0AB41FB3E99445D1942BDEA1305 /* Pods-AYSlidingPickerView_Tests.debug.xcconfig */,
+				0CE9CD6AD3777E8ABA38850EC9376FCF /* Pods-AYSlidingPickerView_Tests.release.xcconfig */,
+			);
+			name = "Pods-AYSlidingPickerView_Tests";
+			path = "Target Support Files/Pods-AYSlidingPickerView_Tests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D3409212C41C5FAFEA3C38506BB7128D /* Pods-AYSlidingPickerView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				54ED1AC15C37F20791EFF00FE015CBB6 /* Pods-AYSlidingPickerView_Example-acknowledgements.markdown */,
+				711BB4C7E3AEC9AE56B37064504C975A /* Pods-AYSlidingPickerView_Example-acknowledgements.plist */,
+				2072386E821A388C6D46D63A779DFC28 /* Pods-AYSlidingPickerView_Example-dummy.m */,
+				9FBB8E9A11B94C3294A1BD93B66C78BB /* Pods-AYSlidingPickerView_Example-frameworks.sh */,
+				9CC0A7CDE32EE6DB16A561101A6EC818 /* Pods-AYSlidingPickerView_Example-resources.sh */,
+				BF8DD9F016E99996E41761C60C6AF9E4 /* Pods-AYSlidingPickerView_Example.debug.xcconfig */,
+				FA566FDCD958BA6D806B958710C455BC /* Pods-AYSlidingPickerView_Example.release.xcconfig */,
+			);
+			name = "Pods-AYSlidingPickerView_Example";
+			path = "Target Support Files/Pods-AYSlidingPickerView_Example";
+			sourceTree = "<group>";
+		};
+		ECDC9E8F7CE5A5133334F0EB59D09C0F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				68D297ECD019CE803B0359E134550F42 /* AYSlidingPickerView.xcconfig */,
+				27580DCA4B0A97DA273D4CE6FC3045DF /* AYSlidingPickerView-dummy.m */,
+				BF1201C3A43AB05E2032AF26E45BC518 /* AYSlidingPickerView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AYSlidingPickerView";
+			sourceTree = "<group>";
+		};
+		EFA2083F884A7D1831124176A1684C52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D75944FE669EA54AAFED0EF9D1454F6 /* AYSlidingPickerView.bundle */,
+				4D7593E1CBD2C733530D64005167592F /* libAYSlidingPickerView.a */,
+				EB021C6F5E843B48ACED5F370F1FBD0B /* libPods-AYSlidingPickerView_Example.a */,
+				99C7AD268BA7834199893E44DCE41590 /* libPods-AYSlidingPickerView_Tests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		323074D3028EA143ACF3875B7AE2759F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCAB05258FC79FFCBFA5EFAD695F8112 /* AYSlidingPickerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0C0B44D159528C9354B519DE89EADC82 /* AYSlidingPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9342C0F64DB41D344A426433CB2D5431 /* Build configuration list for PBXNativeTarget "AYSlidingPickerView" */;
+			buildPhases = (
+				7BE7B6E7BE2A5C7DA6F841FA34B0ACA9 /* Sources */,
+				6A6BDF526E03CC1981975AAD47620ADB /* Frameworks */,
+				323074D3028EA143ACF3875B7AE2759F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84ADD6A1C7E5CBCCD5984B679A4B61ED /* PBXTargetDependency */,
+			);
+			name = AYSlidingPickerView;
+			productName = AYSlidingPickerView;
+			productReference = 4D7593E1CBD2C733530D64005167592F /* libAYSlidingPickerView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2C0004F57C8E36E4BE0665B934491348 /* Pods-AYSlidingPickerView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FDAB303920515665B6D04A263C98340 /* Build configuration list for PBXNativeTarget "Pods-AYSlidingPickerView_Tests" */;
+			buildPhases = (
+				5C817F70C6D7655379EBA062AC3D94A2 /* Sources */,
+				9D4E1A2CCE1868A77A8F684FF1E119F6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				831891F6CAA1D182AB4044DAD8CEA59E /* PBXTargetDependency */,
+			);
+			name = "Pods-AYSlidingPickerView_Tests";
+			productName = "Pods-AYSlidingPickerView_Tests";
+			productReference = 99C7AD268BA7834199893E44DCE41590 /* libPods-AYSlidingPickerView_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DB00B4F1BEE304C18F63F8F06ED4005F /* AYSlidingPickerView-AYSlidingPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67D56DCEA37A503025BC2AB02A37B47D /* Build configuration list for PBXNativeTarget "AYSlidingPickerView-AYSlidingPickerView" */;
+			buildPhases = (
+				48D7190EC295CFFF7D8E725A6489A3CF /* Sources */,
+				37FC6AF40EF86B2A63AB1A167764C2A8 /* Frameworks */,
+				D9DD3524F370BAA4FC2F88742DE80BC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AYSlidingPickerView-AYSlidingPickerView";
+			productName = "AYSlidingPickerView-AYSlidingPickerView";
+			productReference = 7D75944FE669EA54AAFED0EF9D1454F6 /* AYSlidingPickerView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E3B6BFE32BB60809584913E180DDF700 /* Pods-AYSlidingPickerView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 876A5AAA6BD6D27E059628EBA37BDC7E /* Build configuration list for PBXNativeTarget "Pods-AYSlidingPickerView_Example" */;
+			buildPhases = (
+				520B71FDB96832D74936ECFE3F4AFFEA /* Sources */,
+				D3C064EFEAEBAE168824C86D610D4F7C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30D951B7DA1294D02EF9280F5D06CB2C /* PBXTargetDependency */,
+			);
+			name = "Pods-AYSlidingPickerView_Example";
+			productName = "Pods-AYSlidingPickerView_Example";
+			productReference = EB021C6F5E843B48ACED5F370F1FBD0B /* libPods-AYSlidingPickerView_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EFA2083F884A7D1831124176A1684C52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C0B44D159528C9354B519DE89EADC82 /* AYSlidingPickerView */,
+				DB00B4F1BEE304C18F63F8F06ED4005F /* AYSlidingPickerView-AYSlidingPickerView */,
+				E3B6BFE32BB60809584913E180DDF700 /* Pods-AYSlidingPickerView_Example */,
+				2C0004F57C8E36E4BE0665B934491348 /* Pods-AYSlidingPickerView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9DD3524F370BAA4FC2F88742DE80BC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48D7190EC295CFFF7D8E725A6489A3CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520B71FDB96832D74936ECFE3F4AFFEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C69FE973E35861C893E330D6DA1651AB /* Pods-AYSlidingPickerView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C817F70C6D7655379EBA062AC3D94A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA604C82F8AE28121A1FBD06F8E5B88 /* Pods-AYSlidingPickerView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE7B6E7BE2A5C7DA6F841FA34B0ACA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32619DE7A571093E504D9349452E2A9B /* AYSlidingPickerView-dummy.m in Sources */,
+				08CCC67098FD92B323D0384E2B88FE38 /* AYSlidingPickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30D951B7DA1294D02EF9280F5D06CB2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AYSlidingPickerView;
+			target = 0C0B44D159528C9354B519DE89EADC82 /* AYSlidingPickerView */;
+			targetProxy = C85DD1E0E0E7E16DE8EF966475D88AF7 /* PBXContainerItemProxy */;
+		};
+		831891F6CAA1D182AB4044DAD8CEA59E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AYSlidingPickerView;
+			target = 0C0B44D159528C9354B519DE89EADC82 /* AYSlidingPickerView */;
+			targetProxy = 6537A374D5285A073CFA2223B16EBE28 /* PBXContainerItemProxy */;
+		};
+		84ADD6A1C7E5CBCCD5984B679A4B61ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AYSlidingPickerView-AYSlidingPickerView";
+			target = DB00B4F1BEE304C18F63F8F06ED4005F /* AYSlidingPickerView-AYSlidingPickerView */;
+			targetProxy = 7554A694C7959513A73663F8DAD76C3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2A7FA6EB35D8A944A5CE769F60EA93B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D297ECD019CE803B0359E134550F42 /* AYSlidingPickerView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AYSlidingPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		417859B2F51B4180E80200024923F22D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA566FDCD958BA6D806B958710C455BC /* Pods-AYSlidingPickerView_Example.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		518A48C85FE57376925BAC3DEF8E843B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF8DD9F016E99996E41761C60C6AF9E4 /* Pods-AYSlidingPickerView_Example.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		73415FEAAF9737DEB17D2BBD20FF0DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D297ECD019CE803B0359E134550F42 /* AYSlidingPickerView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AYSlidingPickerView/AYSlidingPickerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		77A7E9A0361195596046DAE40CEE579F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F1C0AB41FB3E99445D1942BDEA1305 /* Pods-AYSlidingPickerView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AC138B2D4651223489956ECD4A6F76B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D297ECD019CE803B0359E134550F42 /* AYSlidingPickerView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AYSlidingPickerView/AYSlidingPickerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E40B02DF4CF9D4C5A02B92A4F98C3D35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D297ECD019CE803B0359E134550F42 /* AYSlidingPickerView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AYSlidingPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F1773D96CA2AEAFC89BA122E5DEB424D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CE9CD6AD3777E8ABA38850EC9376FCF /* Pods-AYSlidingPickerView_Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FDAB303920515665B6D04A263C98340 /* Build configuration list for PBXNativeTarget "Pods-AYSlidingPickerView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A7E9A0361195596046DAE40CEE579F /* Debug */,
+				F1773D96CA2AEAFC89BA122E5DEB424D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67D56DCEA37A503025BC2AB02A37B47D /* Build configuration list for PBXNativeTarget "AYSlidingPickerView-AYSlidingPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E40B02DF4CF9D4C5A02B92A4F98C3D35 /* Debug */,
+				2A7FA6EB35D8A944A5CE769F60EA93B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		876A5AAA6BD6D27E059628EBA37BDC7E /* Build configuration list for PBXNativeTarget "Pods-AYSlidingPickerView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518A48C85FE57376925BAC3DEF8E843B /* Debug */,
+				417859B2F51B4180E80200024923F22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9342C0F64DB41D344A426433CB2D5431 /* Build configuration list for PBXNativeTarget "AYSlidingPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC138B2D4651223489956ECD4A6F76B2 /* Debug */,
+				73415FEAAF9737DEB17D2BBD20FF0DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

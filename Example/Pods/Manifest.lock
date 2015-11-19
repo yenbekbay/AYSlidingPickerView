@@ -1,0 +1,14 @@
+PODS:
+  - AYSlidingPickerView (0.1.0)
+
+DEPENDENCIES:
+  - AYSlidingPickerView (from `../`)
+
+EXTERNAL SOURCES:
+  AYSlidingPickerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AYSlidingPickerView: e467b558ba29b8d91eecb009474383c2fa879561
+
+COCOAPODS: 0.39.0
