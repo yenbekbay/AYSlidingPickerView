@@ -62,9 +62,9 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
   self.itemColor = [UIColor blackColor];
 
   self.navigationBarPanGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(didPan:)];
-  self.navigationBarTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(show)];
+  self.navigationBarTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTap:)];
   self.mainViewPanGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(didPan:)];
-  self.mainViewTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismiss)];
+  self.mainViewTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTap:)];
 
   [[UIApplication sharedApplication].delegate.window addSubview:self];
   [[UIApplication sharedApplication].delegate.window sendSubviewToBack:self];
@@ -93,22 +93,11 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
 }
 
 - (void)showWithCompletion:(void (^)(BOOL))completion {
-  NSAssert(self.mainView, @"Main view must be specified");
-  NSAssert(self.items && self.items.count > 0, @"Array of items can't be empty");
-  self.pickerView.hidden = NO;
-  if (self.state == AYSlidingPickerViewClosedState) {
-    [self animateSelectorOpeningWithCompletion:completion];
-  } else {
-    [self animateSelectorClosingWithCompletion:completion];
-  }
+  [self showWithCompletion:completion force:YES];
 }
 
 - (void)dismissWithCompletion:(void (^)(BOOL))completion {
-  if (self.state == AYSlidingPickerViewShownState || self.state == AYSlidingPickerViewDisplayingState) {
-    [self animateSelectorClosingWithCompletion:completion];
-  } else {
-    [self animateSelectorOpeningWithCompletion:completion];
-  }
+  [self dismissWithCompletion:completion force:YES];
 }
 
 - (void)addGestureRecognizersToNavigationBar:(UINavigationBar *)navigationBar {
@@ -172,6 +161,27 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
   }
 }
 
+#pragma mark Private
+
+- (void)showWithCompletion:(void (^)(BOOL))completion force:(BOOL)force {
+  NSAssert(self.mainView, @"Main view must be specified");
+  NSAssert(self.items && self.items.count > 0, @"Array of items can't be empty");
+  self.pickerView.hidden = NO;
+  if (self.state == AYSlidingPickerViewClosedState) {
+    [self animateSelectorOpeningWithCompletion:completion];
+  } else if (!force) {
+    [self animateSelectorClosingWithCompletion:completion];
+  }
+}
+
+- (void)dismissWithCompletion:(void (^)(BOOL))completion force:(BOOL)force {
+  if (self.state == AYSlidingPickerViewShownState || self.state == AYSlidingPickerViewDisplayingState) {
+    [self animateSelectorClosingWithCompletion:completion];
+  } else if (!force) {
+    [self animateSelectorOpeningWithCompletion:completion];
+  }
+}
+
 #pragma mark Gesture recognizers
 
 - (void)didPan:(UIPanGestureRecognizer *)gestureRecognizer {
@@ -208,6 +218,14 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
         }
       }
     }
+  }
+}
+
+- (void)didTap:(UITapGestureRecognizer *)gestureRecognizer {
+  if ([gestureRecognizer.view isKindOfClass:[UINavigationBar class]]) {
+    [self showWithCompletion:nil force:NO];
+  } else {
+    [self dismissWithCompletion:nil force:NO];
   }
 }
 
