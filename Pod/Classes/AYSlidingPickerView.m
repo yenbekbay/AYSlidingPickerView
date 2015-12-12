@@ -234,6 +234,9 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
 - (void)animateSelectorOpeningWithCompletion:(void (^)(BOOL))completion {
   if (self.state != AYSlidingPickerViewShownState && self.state != AYSlidingPickerViewDisplayingState) {
     self.state = AYSlidingPickerViewDisplayingState;
+    if (self.willAppearHandler) {
+      self.willAppearHandler();
+    }
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];
     [UIView animateWithDuration:0.2f animations:^{
       // Pushing the controller down
@@ -254,8 +257,8 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
         if (completion) {
           completion(completedSecond);
         }
-        if (self.appearHandler) {
-          self.appearHandler();
+        if (self.didAppearHandler) {
+          self.didAppearHandler();
         }
       }];
     }];
@@ -265,6 +268,9 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
 - (void)animateSelectorClosingWithCompletion:(void (^)(BOOL))completion {
   if (self.state != AYSlidingPickerViewClosedState) {
     self.state = AYSlidingPickerViewDisplayingState;
+    if (self.willDismissHandler) {
+      self.willDismissHandler();
+    }
     [UIView animateWithDuration:0.2f animations:^{
       // Pulling the controller up
       for (UIView *view in [UIApplication sharedApplication].delegate.window.subviews) {
@@ -286,8 +292,8 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
         if (completion) {
           completion(completedSecond);
         }
-        if (self.dismissHandler) {
-          self.dismissHandler();
+        if (self.didDismissHandler) {
+          self.didDismissHandler();
         }
       }];
     }];
@@ -296,6 +302,9 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
 
 - (void)openSelectorFromCenterWithVelocity:(CGFloat)velocity completion:(void (^)(BOOL))completion {
   self.state = AYSlidingPickerViewDisplayingState;
+  if (self.willAppearHandler) {
+    self.willAppearHandler();
+  }
   [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];
   CGFloat viewCenterY = CGRectGetMidY([UIScreen mainScreen].bounds) + CGRectGetHeight(self.bounds) - kSlidingPickerViewBounceOffset;
   for (UIView *view in [UIApplication sharedApplication].delegate.window.subviews) {
@@ -307,8 +316,8 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
         if (completion) {
           completion(completed);
         }
-        if (self.appearHandler) {
-          self.appearHandler();
+        if (self.didAppearHandler) {
+          self.didAppearHandler();
         }
       }];
     }
@@ -317,6 +326,9 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
 
 - (void)closeSelectorFromCenterWithVelocity:(CGFloat)velocity completion:(void (^)(BOOL))completion {
   self.state = AYSlidingPickerViewDisplayingState;
+  if (self.willDismissHandler) {
+    self.willDismissHandler();
+  }
   [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
   for (UIView *view in [UIApplication sharedApplication].delegate.window.subviews) {
     if (view != self) {
@@ -327,8 +339,8 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
         if (completion) {
           completion(completed);
         }
-        if (self.dismissHandler) {
-          self.dismissHandler();
+        if (self.didDismissHandler) {
+          self.didDismissHandler();
         }
       }];
     }

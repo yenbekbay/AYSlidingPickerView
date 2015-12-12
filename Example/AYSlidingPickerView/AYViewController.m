@@ -61,11 +61,17 @@
   self.pickerView.items = items;
   self.pickerView.selectedIndex = 1;
   self.pickerView.closeOnSelection = YES;
-  self.pickerView.appearHandler = ^{
-    NSLog(@"Picker view opened!");
+  self.pickerView.willAppearHandler = ^{
+    NSLog(@"Picker is going to open!");
   };
-  self.pickerView.dismissHandler = ^{
-    NSLog(@"Picker view closed!");
+  self.pickerView.willDismissHandler = ^{
+    NSLog(@"Picker is going to close!");
+  };
+  self.pickerView.didAppearHandler = ^{
+    NSLog(@"Picker is opened!");
+  };
+  self.pickerView.didDismissHandler = ^{
+    NSLog(@"Picker is dismissed");
   };
 
   self.view.backgroundColor = colors[[colors allKeys][self.pickerView.selectedIndex]];
