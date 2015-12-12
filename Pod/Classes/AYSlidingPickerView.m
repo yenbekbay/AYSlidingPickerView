@@ -254,6 +254,9 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
         if (completion) {
           completion(completedSecond);
         }
+        if (self.appearHandler) {
+          self.appearHandler();
+        }
       }];
     }];
   }
@@ -283,6 +286,9 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
         if (completion) {
           completion(completedSecond);
         }
+        if (self.dismissHandler) {
+          self.dismissHandler();
+        }
       }];
     }];
   }
@@ -301,6 +307,9 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
         if (completion) {
           completion(completed);
         }
+        if (self.appearHandler) {
+          self.appearHandler();
+        }
       }];
     }
   }
@@ -317,6 +326,9 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
         self.state = AYSlidingPickerViewClosedState;
         if (completion) {
           completion(completed);
+        }
+        if (self.dismissHandler) {
+          self.dismissHandler();
         }
       }];
     }

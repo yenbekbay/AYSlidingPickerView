@@ -71,6 +71,14 @@ typedef enum {
  *  Current state of the picker view.
  */
 @property (nonatomic, readonly) AYSlidingPickerViewState state;
+/**
+ *  A block that will be fired when the picker view appears.
+ */
+@property (nonatomic, copy) void (^appearHandler)();
+/**
+ *  A block that will be fired when the picker view is dismissed.
+ */
+@property (nonatomic, copy) void (^dismissHandler)();
 
 #pragma mark Methods
 

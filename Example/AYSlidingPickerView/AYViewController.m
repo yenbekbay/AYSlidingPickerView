@@ -61,6 +61,12 @@
   self.pickerView.items = items;
   self.pickerView.selectedIndex = 1;
   self.pickerView.closeOnSelection = YES;
+  self.pickerView.appearHandler = ^{
+    NSLog(@"Picker view opened!");
+  };
+  self.pickerView.dismissHandler = ^{
+    NSLog(@"Picker view closed!");
+  };
 
   self.view.backgroundColor = colors[[colors allKeys][self.pickerView.selectedIndex]];
   self.navigationController.navigationBar.barTintColor = [self darkerColorForColor:self.view.backgroundColor];
