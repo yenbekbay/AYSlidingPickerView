@@ -164,6 +164,9 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
 #pragma mark Private
 
 - (void)showWithCompletion:(void (^)(BOOL))completion force:(BOOL)force {
+  if (self.isDisabled) {
+    return;
+  }
   NSAssert(self.mainView, @"Main view must be specified");
   NSAssert(self.items && self.items.count > 0, @"Array of items can't be empty");
   self.pickerView.hidden = NO;
@@ -185,6 +188,9 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
 #pragma mark Gesture recognizers
 
 - (void)didPan:(UIPanGestureRecognizer *)gestureRecognizer {
+  if (self.isDisabled) {
+    return;
+  }
   self.pickerView.hidden = NO;
   for (UIView *view in [UIApplication sharedApplication].delegate.window.subviews) {
     if (view != self) {

@@ -72,6 +72,10 @@ typedef enum {
  */
 @property (nonatomic, readonly) AYSlidingPickerViewState state;
 /**
+ *  Indicates whether or not the picker view is allowed to be shown.
+ */
+@property (nonatomic, getter=isDisabled) BOOL disabled;
+/**
  *  A block that will be fired before the picker view appears.
  */
 @property (nonatomic, copy) void (^willAppearHandler)();
