@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "AYSlidingPickerView"
-  s.version          = "0.1.3"
+  s.version          = "0.1.4"
   s.summary          = "Implementation of a picker view that can be shown by either tapping on or panning the navigation bar"
   s.homepage         = "https://github.com/yenbekbay/AYSlidingPickerView"
   s.license          = 'MIT'
