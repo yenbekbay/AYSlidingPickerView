@@ -390,8 +390,9 @@ static NSUInteger const kSlidingPickerViewNumberOfVisibleItems = 5;
   AYSlidingPickerViewItem *selectedItem = self.items[(NSUInteger)row];
   if (self.closeOnSelection) {
     [self animateSelectorClosingWithCompletion:selectedItem.handler];
+  } else {
+    selectedItem.handler(YES);
   }
-  selectedItem.handler(YES);
 }
 
 @end
